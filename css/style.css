@@ -1,0 +1,222 @@
+/*
+    Jessica J. Hernandez
+    Full Sail University
+    Deployment of Web Applications
+    201601-01 Online
+    Week 2 Assignment: Your Portfolio, Live
+*/
+
+/* ------------------------------ */
+/*			MAIN STYLES			  */
+/* ------------------------------ */
+
+body {
+    background: #efefef;
+    padding: 0;
+    margin: 0;
+}
+
+body, #container {
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    background:  white;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    z-index: 100;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 120%;
+    border-bottom: 1px solid #f94e4e;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+#container {
+/*    background: green;*/
+    padding: 5%;
+    width: 85%;
+    background: white;
+    margin: 0 auto 3% auto;
+    color: black;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+.navItem:nth-child(1),
+.navItem:nth-child(2) {
+    text-align: right;
+}
+
+.navItem:nth-child(4),
+.navItem:nth-child(5) {
+    text-align: left;
+}
+
+nav img {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#main_logo {
+    width: 50%;
+}
+
+.navItem span , .mobileNavItem span{
+    padding: 0 10px 10px;
+    border-bottom: 2px solid white;
+    transition: border-color 0.3s ease;
+}
+
+.activeNavItem {
+    border-color: #35d8b9 !important;
+}
+
+.navItem span:hover, .mobileNavItem span:hover{
+    cursor: pointer;
+    border-color: #c6c6c6 !important;
+}
+
+.navItem a, .navItem a:hover, .navItem a:visited,
+.mobileNavItem a, .mobileNavItem a:hover, .mobileNavItem a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#small_nav, #modal {
+    display: none;
+}
+
+#sitesList li {
+    margin-bottom: 20px;
+}
+
+
+
+/* ------------------------------ */
+/*			NAVIGATION			  */
+/* ------------------------------ */
+
+
+
+
+
+/* ------------------------------ */
+/*		  HEADINGS & TEXT		  */
+/* ------------------------------ */
+
+
+
+
+/* ------------------------------ */
+/*			   LISTS			  */
+/* ------------------------------ */
+
+
+
+/* ------------------------------ */
+/*			  BUTTONS			  */
+/* ------------------------------ */
+
+
+
+
+/* ______________________________ */
+/*          MEDIA QUERIES         */
+/* ______________________________ */
+
+@media only screen 
+    and (max-width: 414px) {
+        
+        body {
+            
+        }
+        
+        #small_nav {
+            display: inherit;
+        }
+        
+        #main_nav {
+            display: none;
+        }
+        
+        nav {
+            text-align: left;
+        }
+        
+        #main_logo {
+            width: 55% !important;
+            margin-left: 10px;
+        }
+        
+        .mobile_nav {
+            padding: 0;
+        }
+        
+        .mobile_nav:hover {
+            cursor: pointer;
+        }
+        
+        nav .row {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .dot {
+            background: #c6c6c6;
+            border-radius: 10px;
+            width: 6px;
+            height: 6px;
+            padding: 0;
+            margin: 1px;
+        }
+        
+        .dot.middle {
+            background: #f94e4e;
+        }
+        
+        #modal {
+            display: none;
+            background-color: rgba(0,0,0,0.7);
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 5;
+        }
+        
+        #menu_options {
+            display: none;
+            background-color: white;
+            overflow: auto;
+            padding: 10px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            letter-spacing: 2px;
+            font-size: 120%;
+            background-image: url(../images/jes_her_art_icon.png);
+            background-repeat: no-repeat;
+            background-size: 55%;
+            background-position: center;
+            background-position: 130%;
+        }
+        
+        .mobileNavItem {
+            text-align: left;
+            margin: 30px 20px;
+            padding: 0 !important;
+        }
+        
+        .mobileNavItem span {
+            padding: 5px 10px 5px; 
+        }
+    }
